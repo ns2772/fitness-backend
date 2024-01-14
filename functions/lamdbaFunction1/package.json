@@ -1,0 +1,9 @@
+// /backend/functions/lambdaFunction1/package.json
+
+{
+  "name": "lambdaFunction1",
+  "version": "1.0.0",
+  "dependencies": {
+    // Your function's dependencies go here
+  }
+}

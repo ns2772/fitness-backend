@@ -1,0 +1,38 @@
+// /backend/schema.graphql
+
+type User @model {
+  id: ID!
+  username: String!
+  email: String!
+  workouts: [Workout] @connection
+  nutritionPlans: [NutritionPlan] @connection
+}
+
+type Workout @model {
+  id: ID!
+  title: String!
+  duration: Int
+  exercises: [Exercise] @connection
+}
+
+type Exercise @model {
+  id: ID!
+  name: String!
+  sets: Int
+  reps: Int
+}
+
+type NutritionPlan @model {
+  id: ID!
+  date: AWSDate
+  meals: [Meal] @connection
+}
+
+type Meal @model {
+  id: ID!
+  name: String!
+  calories: Int
+  nutrients: Nutrients
+}
+
+type Nutrients @

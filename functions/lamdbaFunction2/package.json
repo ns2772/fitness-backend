@@ -1,0 +1,9 @@
+// /backend/functions/lambdaFunction2/package.json
+
+{
+  "name": "lambdaFunction2",
+  "version": "1.0.0",
+  "dependencies": {
+    // Dependencies for lambdaFunction2
+  }
+}
